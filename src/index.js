@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Hello,HelloWorld} from './Frstcpn/FrstCode';
+import TextField from './Forms/form'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Hello  la9ab='goat'/>
+    {/* <HelloWorld la9ab='lmhyb'/> */}
+    <TextField inputName='smya' inputLabel='enter smitk'>
+      lorem
+    </TextField>
+    <TextField inputName='la9ab' inputLabel='enter knitk'/>
+    
   </React.StrictMode>
 );
 

@@ -17,6 +17,10 @@ function App() {
         >
           Learn React
         </a>
+        <script>
+          let str= `how r you brthr`
+          document.write(str);
+        </script>
       </header>
     </div>
   );

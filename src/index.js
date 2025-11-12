@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Hello,HelloWorld} from './Frstcpn/FrstCode';
 import TextField from './Forms/form'
 import Fawakeh from './Fruits/fruits.jsx'   // bima ana lcomp 3ndo export default y3ni w7da, kyimporteha wkha tsmiha smya mkhtalfa 3la dual lfunction ooriginl
+import Counter from './counter-state/counter.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruitsArray = [
@@ -20,11 +21,11 @@ root.render(
     {/* here;s teh frst container */}
     <Hello  la9ab='goat'/>
     {/* <HelloWorld la9ab='lmhyb'/> */}
-    
+    <br></br>
     
     {/* hers's the fruits container */}
     <Fawakeh fruits={fruitsArray}/>
-
+    <br></br>
 
     
     {/* here the form container */}
@@ -32,7 +33,11 @@ root.render(
       lorem
     </TextField>
     <TextField inputName='la9ab' inputLabel='enter knitk'/>
-    
+    <br></br>
+
+    {/* here' the counter container */}
+    <Counter />
+
   </React.StrictMode>
 );
 

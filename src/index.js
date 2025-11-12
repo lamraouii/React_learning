@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { Hello,HelloWorld} from './Frstcpn/FrstCode';
 import TextField from './Forms/form'
 import Fawakeh from './Fruits/fruits.jsx'   // bima ana lcomp 3ndo export default y3ni w7da, kyimporteha wkha tsmiha smya mkhtalfa 3la dual lfunction ooriginl
-import Counter from './counter-state/counter.jsx'
+import Counter_C from './counter-state/counter-class.jsx'
+import Event from './Events/Event.jsx';
+import Counter_F from './counter-state/counter-fct.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruitsArray = [
@@ -26,6 +28,8 @@ root.render(
     {/* hers's the fruits container */}
     <Fawakeh fruits={fruitsArray}/>
     <br></br>
+    <br></br>
+    <br></br>
 
     
     {/* here the form container */}
@@ -35,8 +39,16 @@ root.render(
     <TextField inputName='la9ab' inputLabel='enter knitk'/>
     <br></br>
 
-    {/* here' the counter container */}
-    <Counter />
+    {/* here' the counter class container */}
+    <Counter_C />
+    <br></br>
+
+    {/* here' the Event container */}
+    <Event />
+    <br></br>
+
+    {/* here' the COunter function container */}
+    <Counter_F initialVal={2} step={5}  />
 
   </React.StrictMode>
 );

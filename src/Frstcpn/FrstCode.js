@@ -16,8 +16,8 @@ export class HelloWorld extends React.Component {
 */
 
 export  function Hello({la9ab}) {
-    const age =19
-    return (<h1>ta7yaty ssi {age>18?'la9ab':la9ab}</h1>) //{hna kndiro traitment}  bhal ${} f ecmascript6
+    const age =22
+    return (<h1>ta7yaty ssi {age>22?'la9ab':la9ab}</h1>) //{hna kndiro traitment}  bhal ${} f ecmascript6
 }
 
 /*export class HelloWorld extends Component {

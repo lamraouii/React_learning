@@ -35,5 +35,6 @@ export default class ToggleName extends Component{
 
     /*
     rule: ay hja zdnaha f didmount kan7ydiha f didunmount
+
     */
 }

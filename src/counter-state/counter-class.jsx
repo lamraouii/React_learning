@@ -6,7 +6,7 @@ export default class Counter_C extends Component {
         super(props);
         this.state = {
             counter:0,
-            date : undefined
+            age : 25
         }
         console.log('hada awl hja ktexecuta')
     }
@@ -39,6 +39,18 @@ export default class Counter_C extends Component {
         
     }
 */
+
+    shouldComponentUpdate(nextProps,nextState,nextContext){
+        // ila returna true 3ad kay3yet l render()
+
+        if(nextState.age !== this.state.age){
+            return true 
+        }
+        return false  
+    }// so while age didnt change render wont be called 
+     // so laffichage wont be updated
+
+
     componentDidMount(){
         // chi hja kan3yto leha mrra w7da flcode bhal : fetch api
         console.log('componenet mounted')

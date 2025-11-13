@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Hello,HelloWorld} from './Frstcpn/FrstCode';
 import TextField from './Forms/form'
-import Fawakeh from './Fruits/fruits.jsx'   // bima ana lcomp 3ndo export default y3ni w7da, kyimporteha wkha tsmiha smya mkhtalfa 3la dual lfunction ooriginl
+import FruitsList from './Fruits/fruitsList.jsx'   // bima ana lcomp 3ndo export default y3ni w7da, kyimporteha wkha tsmiha smya mkhtalfa 3la dual lfunction ooriginl
 import Counter_C from './counter-state/counter-class.jsx'
 import Event from './Events/Event.jsx';
 import Counter_F from './counter-state/counter-fct.jsx';
+import ToggleName from './toggle/toggleName.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruitsArray = [
@@ -25,8 +26,16 @@ root.render(
     {/* <HelloWorld la9ab='lmhyb'/> */}
     <br></br>
     
+    {/* hers's the life cycle third part */}
+    <ToggleName  />
+    <br></br>
+    <br></br>
+    <br></br>
+
+    
+    
     {/* hers's the fruits container */}
-    <Fawakeh fruits={fruitsArray}/>
+    <FruitsList />
     <br></br>
     <br></br>
     <br></br>

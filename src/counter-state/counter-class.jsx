@@ -8,6 +8,7 @@ export default class Counter_C extends Component {
             counter:0,
             date : undefined
         }
+        console.log('hada awl hja ktexecuta')
     }
 
     handleClick=()=>{
@@ -38,7 +39,21 @@ export default class Counter_C extends Component {
         
     }
 */
+    componentDidMount(){
+        // chi hja kan3yto leha mrra w7da flcode bhal : fetch api
+        console.log('componenet mounted')
+    }
+
+    componentDidUpdate(PrevProps,prevState){
+
+        if (prevState.counter != this.state.counter){
+            console.log('component updated')
+            console.log(prevState, this.state) //hadi bach iban changemnt
+        }
+    }
+
     render(){
+        console.log('hada tani hja ktexecuta')
         return <div>
             {/* <button onClick={this.handleClick.bind(this)}>incrementer</button> // hadi nrmlment ila mdrnach arow funct f handleClick*/}
             <button onClick={this.handleClick}>incrementer</button>
@@ -46,4 +61,5 @@ export default class Counter_C extends Component {
             il y a {this.state.counter}  secondes
         </div>
     }
+
 }

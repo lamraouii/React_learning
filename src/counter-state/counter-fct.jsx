@@ -1,11 +1,27 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Counter_F({initialVal,step}) {
     //hooks
     //usestate
 
+    // Useeffect : hadi feha ga3 duk componentDid... fde9a
+
     const [count,setCount] = useState(initialVal) //  initial value 0
     
+    useEffect(()=>{
+        console.log('executed everytime !') // after every render()
+    })
+    
+    useEffect(()=>{
+        console.log('component mounted !') // only flbdya  bhal didMount
+    }, []) // hna zdna dependies [] 
+
+
+    useEffect(()=>{
+        console.log('count changed !')  // bhal didUpdated
+    }, [count]) // hna ilaaa tbdel count 
+
+
     return <div>
         <span>
             <button onClick={()=>{
